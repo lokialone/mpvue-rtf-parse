@@ -1,6 +1,6 @@
 {
   "name": "mpvue-rtf-parse",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "适用于 Mpvue 的微信/支付宝小程序富文本解析自定义组件，支持HTML及markdown解析",
   "main": "src/wxParse.vue",
   "scripts": {

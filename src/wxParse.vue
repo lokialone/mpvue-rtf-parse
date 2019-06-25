@@ -18,7 +18,7 @@
 <script>
 import HtmlToJson from './libs/html2json';
 import wxParseTemplate from './components/wxParseTemplate0';
-import Store from '..store/index.js';
+import Store from './store/index';
 
 export default {
   name: 'wxParse',

@@ -16,6 +16,7 @@
 
 | 名称              | 类型           | 默认值        | 描述               |
 | -----------------|--------------- | ------------- | ----------------  |
+| screenWidth      | Number         | -             | 当前屏幕宽度，用于图片的展示|
 | loading          | Boolean        | false         | 数据加载状态       |
 | className        | String         | —             | 自定义 class 名称  |
 | content          | String         | —             | 渲染内容           |
