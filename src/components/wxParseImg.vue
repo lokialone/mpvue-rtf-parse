@@ -12,6 +12,7 @@
 </template>
 
 <script>
+import Store from '../store/index';
 export default {
   name: 'wxParseImg',
   data() {
@@ -51,7 +52,7 @@ export default {
     wxAutoImageCal(originalWidth, originalHeight) {
       // 获取图片的原始长宽
       const { webPadding, padding } = this.node.attr;
-      const windowWidth = this.node.$screen.width - 2 * webPadding - 2 * padding;
+      const windowWidth = Store.screenWidth - 2 * webPadding - 2 * padding;
       const results = {};
 
       if (originalWidth < 60 || originalHeight < 60) {

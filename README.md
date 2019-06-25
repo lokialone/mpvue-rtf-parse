@@ -1,4 +1,5 @@
-# mpvue-wxParse 适用于 Mpvue 的微信小程序富文本解析组件
+# mpvue-rtf-Parse 适用于 Mpvue 的微信/支付宝小程序富文本解析组件
+为了支持支付宝小程序的使用
 
 > 支持 Html、Markdown 转 Wxml 可视化，修改自: [wxParse](https://github.com/icindy/wxParse)
 
@@ -7,6 +8,7 @@
 
 
 ## 扫码体验
+!
 ![小程序码](./static/qrcode.jpg)
 
 

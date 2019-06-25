@@ -46,16 +46,16 @@ function trimHtml(html) {
     .replace(/<style[^]*<\/style>/gi, '');
 }
 
-function getScreenInfo() {
-  const screen = {};
-  wx.getSystemInfo({
-    success: (res) => {
-      screen.width = res.windowWidth;
-      screen.height = res.windowHeight;
-    },
-  });
-  return screen;
-}
+// function getScreenInfo() {
+//   const screen = {};
+//   wx.getSystemInfo({
+//     success: (res) => {
+//       screen.width = res.windowWidth;
+//       screen.height = res.windowHeight;
+//     },
+//   });
+//   return screen;
+// }
 
 function html2json(html, customHandler, imageProp, host) {
   // 处理字符串
@@ -73,7 +73,7 @@ function html2json(html, customHandler, imageProp, host) {
     this.node = 'element';
     this.tag = tag;
   }
-  Node.prototype.$screen = getScreenInfo();
+  // Node.prototype.$screen = getScreenInfo();
   Node.prototype.$host = host;
 
   HTMLParser(html, {

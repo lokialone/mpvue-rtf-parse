@@ -1,9 +1,9 @@
 <!--**
- * author: F-loat <chaimaoyuan@foxmail.com>
+ * author: lokialone
  *
- * github地址: https://github.com/F-loat/mpvue-wxParse
+ * github地址:
  *
- * for: Mpvue框架下 微信小程序富文本解析
+ * for: Mpvue框架下 微信/支付宝小程序富文本解析
  */-->
 
 <template>
@@ -18,6 +18,7 @@
 <script>
 import HtmlToJson from './libs/html2json';
 import wxParseTemplate from './components/wxParseTemplate0';
+import Store from '..store/index.js';
 
 export default {
   name: 'wxParse',
@@ -25,6 +26,13 @@ export default {
     loading: {
       type: Boolean,
       default: false,
+    },
+    app: {
+      default: '',
+      type: String
+    },
+    screenWidth: {
+      type: Number,
     },
     className: {
       type: String,
@@ -75,6 +83,9 @@ export default {
     return {
       imageUrls: [],
     };
+  },
+  created() {
+    if (this.screenWidth) Store.screenWidth = this.screenWidth;
   },
   computed: {
     nodes() {
